@@ -49,7 +49,7 @@ export default function RandomBackground() {
   return (
     <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
       {/* 基础渐变背景 - 始终存在 */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#f5f5f7] via-[#e8e8ed] to-[#d1d1d6]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/5 via-black/10 to-black/15 backdrop-blur-md" />
 
       {/* 背景图片层 - 加载完成后显示 */}
       {imageUrl && (
